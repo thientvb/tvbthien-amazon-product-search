@@ -1,0 +1,1 @@
+D:\project\C#\AmazonProductSearch\AmazonProductSearchWebApp\obj\Debug\AmazonProductSearchWebApp.esproj.CoreCompileInputs.cache

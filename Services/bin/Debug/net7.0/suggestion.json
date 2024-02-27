@@ -1,0 +1,18 @@
+[
+  {
+    "SuggType": "Type1",
+    "Type": "Category",
+    "Value": "Electronics",
+    "Prior": 0.9,
+    "Ghost": false,
+    "Help": true
+  },
+  {
+    "SuggType": "Type2",
+    "Type": "Product",
+    "Value": "Laptop",
+    "Prior": 0.85,
+    "Ghost": false,
+    "Help": false
+  }
+]

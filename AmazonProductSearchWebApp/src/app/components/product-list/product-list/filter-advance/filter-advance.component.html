@@ -1,0 +1,19 @@
+<div>
+  <h5>Recently used filters</h5>
+  <hr>
+  <h5>Customer Reviews</h5>
+  <div class="star-rating">
+    <a><span *ngFor="let star of [1, 2, 3, 4, 5]" class="star" [class.filled]="star <= 4">&#9733;</span> & Up</a>
+    <a><span *ngFor="let star of [1, 2, 3, 4, 5]" class="star" [class.filled]="star <= 3">&#9733;</span> & Up</a>
+    <a><span *ngFor="let star of [1, 2, 3, 4, 5]" class="star" [class.filled]="star <= 2">&#9733;</span> & Up</a>
+    <a><span *ngFor="let star of [1, 2, 3, 4, 5]" class="star" [class.filled]="star <= 1">&#9733;</span> & Up</a>
+  </div>
+  <h5>Amazon Fashion</h5>
+  <div>
+    <input type="checkbox" value=""> Our Brands<br>
+    <input type="checkbox" value=""> Premium Brands<br>
+    <input type="checkbox" value=""> Top Brands
+  </div>
+
+  FilterAdvanceComponent
+</div>

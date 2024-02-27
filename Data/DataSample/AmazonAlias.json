@@ -1,0 +1,114 @@
+[
+  {
+    "Value": "aps",
+    "DisplayName": "All Departments"
+  },
+  {
+    "Value": "arts-crafts-intl-ship",
+    "DisplayName": "Arts & Crafts"
+  },
+  {
+    "Value": "automotive-intl-ship",
+    "DisplayName": "Automotive"
+  },
+  {
+    "Value": "baby-products-intl-ship",
+    "DisplayName": "Baby"
+  },
+  {
+    "Value": "beauty-intl-ship",
+    "DisplayName": "Beauty & Personal Care"
+  },
+  {
+    "Value": "stripbooks-intl-ship",
+    "DisplayName": "Books"
+  },
+  {
+    "Value": "fashion-boys-intl-ship",
+    "DisplayName": "Boys' Fashion"
+  },
+  {
+    "Value": "computers-intl-ship",
+    "DisplayName": "Computers"
+  },
+  {
+    "Value": "deals-intl-ship",
+    "DisplayName": "Deals"
+  },
+  {
+    "Value": "digital-music",
+    "DisplayName": "Digital Music"
+  },
+  {
+    "Value": "electronics-intl-ship",
+    "DisplayName": "Electronics"
+  },
+  {
+    "Value": "fashion-girls-intl-ship",
+    "DisplayName": "Girls' Fashion"
+  },
+  {
+    "Value": "hpc-intl-ship",
+    "DisplayName": "Health & Household"
+  },
+  {
+    "Value": "kitchen-intl-ship",
+    "DisplayName": "Home & Kitchen"
+  },
+  {
+    "Value": "industrial-intl-ship",
+    "DisplayName": "Industrial & Scientific"
+  },
+  {
+    "Value": "digital-text",
+    "DisplayName": "Kindle Store"
+  },
+  {
+    "Value": "luggage-intl-ship",
+    "DisplayName": "Luggage"
+  },
+  {
+    "Value": "fashion-mens-intl-ship",
+    "DisplayName": "Men's Fashion"
+  },
+  {
+    "Value": "movies-tv-intl-ship",
+    "DisplayName": "Movies & TV"
+  },
+  {
+    "Value": "music-intl-ship",
+    "DisplayName": "Music, CDs & Vinyl"
+  },
+  {
+    "Value": "pets-intl-ship",
+    "DisplayName": "Pet Supplies"
+  },
+  {
+    "Value": "instant-video",
+    "DisplayName": "Prime Video"
+  },
+  {
+    "Value": "software-intl-ship",
+    "DisplayName": "Software"
+  },
+  {
+    "Value": "sporting-intl-ship",
+    "DisplayName": "Sports & Outdoors"
+  },
+  {
+    "Value": "tools-intl-ship",
+    "DisplayName": "Tools & Home Improvement"
+  },
+  {
+    "Value": "toys-and-games-intl-ship",
+    "DisplayName": "Toys & Games"
+  },
+  {
+    "Value": "videogames-intl-ship",
+    "DisplayName": "Video Games"
+  },
+  {
+    "Value": "fashion-womens-intl-ship",
+    "DisplayName": "Women's Fashion"
+  }
+]

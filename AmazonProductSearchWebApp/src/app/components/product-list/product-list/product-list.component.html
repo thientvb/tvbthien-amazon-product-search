@@ -1,0 +1,58 @@
+<div class="mt-2">
+  <div class="row m-0">
+    <div class="col-2">
+      <div class="container">
+        <app-filter-advance></app-filter-advance>
+      </div>
+    </div>
+    <div class="col-10">
+      <div *ngIf="!filteredProducts.length">
+        <h1>No result</h1>
+      </div>
+      <div *ngIf="filteredProducts.length">
+        <h4>Results</h4>
+        <span>Price and other details may vary based on product size and color.</span>
+      </div>
+      <div class="product-list">
+        <div *ngFor="let product of filteredProducts" class="product-item">
+          <img src="../../../../assets/logo/logo-amazon.jpg" alt="{{ product.title }}" />
+          <div class="product-details">
+            <h3 class="product-title">{{ product.title }}</h3>
+            <div class="star-rating">
+              {{ product.rating }}<span *ngFor="let star of [1, 2, 3, 4, 5]" class="star" [class.filled]="star <= product.rating" title="{{product.rating}} out of 5">&#9733;</span>
+              <a href="#" class="review" title="Reviewed">{{ product.numberOfReviews }}</a>
+            </div>
+            <p>700+ bought in past month</p>
+            <div class="product-price" *ngIf="product.priceDiscounted">
+              $<span class="integer-part">{{ getProductIntegerPart(product.price) }}</span>
+              <span class="decimal-part">{{ getProductDecimalPart(product.price) }}</span>
+              <span class="discounted">List: <b class="price-discounted">${{ product.price }}</b></span>
+            </div>
+            <div class="product-price" *ngIf="!product.priceDiscounted">
+              $<span class="integer-part">{{ getProductIntegerPart(product.price) }}</span>
+              <span class="decimal-part">{{ getProductDecimalPart(product.price) }}</span>
+            </div>
+          </div>
+        </div>
+        <nav *ngIf="filteredProducts.length" aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+

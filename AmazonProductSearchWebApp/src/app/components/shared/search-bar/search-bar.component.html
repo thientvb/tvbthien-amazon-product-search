@@ -1,0 +1,92 @@
+<div class="navbar">
+  <div class="nav-logo">
+      <!-- Your logo goes here -->
+      <img src="../../../../assets/logo/logo-amazon.jpg" alt="Logo">
+  </div>
+  <div class="nav-global">
+    <div id="glow-ingress-block">
+      <span class="nav-line-1 nav-progressive-content" id="glow-ingress-line1">
+         Deliver to
+      </span>
+      <br>
+      <span class="nav-line-2 nav-progressive-content" id="glow-ingress-line2">
+         VietNam
+      </span>
+    </div>
+  </div>
+  <div class="search-bar">
+    <div class="select-container">
+      <select [(ngModel)]="aliasSelected">
+        <option *ngFor="let alias of aliases" [value]="alias.value">{{ alias.displayName }}</option>
+      </select>
+    </div>
+    <div class="search-input">
+      <input type="text" placeholder="Search..." class="search-text-input" [(ngModel)]="query" (input)="onChangeTextSearch(query)"
+        (focus)="openTrendingSuggestions()" (blur)="closeTrendingSuggestions()" (keyup.enter)="searchProduct(query)">
+      <img src="../../../../assets/icon/MLT_Icon_x2.png" alt="Icon" class="image-upload-icon" (click)="openAmazonLens()">
+      <div class="trending-suggestions" *ngIf="showTrendingSuggestions">
+        <div *ngIf="query == '' && aliasSelected == 'aps'">
+          <div *ngFor="let suggestion of mySuggestions; let i = index" class="my-suggestion-container">
+            <div (click)="searchProduct(suggestion.keyword)">
+              <span class="my-suggestion-keyword">{{ suggestion.keyword }}</span> in
+              <span class="my-suggestion-alias">{{ suggestion.alias }}</span>
+            </div>
+            <button (click)="removeMySuggestion(i)" class="my-suggestion-remove-button">X</button>
+          </div>
+          <div *ngFor="let suggestion of trendingSuggestions">
+            <div (click)="searchProduct(suggestion.keyword)">
+              <img src="../../../../assets/icon/suggest-trending.png" alt="Icon" class="trending-icon">
+              <span class="suggestion-trending-text">{{ suggestion.keyword }}</span>
+            </div>
+          </div>
+        </div>
+        <div *ngIf="query != '' && suggestionResponse">
+          <div *ngFor="let suggestion of suggestionResponse.suggestions">
+            <div (click)="searchProduct(suggestion.value)">
+              <img src="../../../../assets/icon/icon-search.png" alt="Icon" class="trending-icon">
+              <span class="suggestion-trending-text">{{ suggestion.value }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="search-button">
+        <button (click)="searchProduct(query)">
+          <img src="../../../../assets/icon/icon-search.png" alt="Icon" class="search-icon">
+        </button>
+    </div>
+    <div class="amazon-lens" *ngIf="showAmazonLens">
+      <button (click)="closeAmazonLens()" class="btn-close-amazon-lens">X</button>
+      <div class="container">
+        <h3><b>Amazon</b> lens</h3>
+        <span>Search with any image</span>
+        <br><br>
+        <button>Upload an image</button>
+        <input type="file" id="vsar_img_file" accept="image/avif,image/*" class="vsar-upload-file" style="display:none;">
+      </div>
+    </div>
+  </div>
+  <div class="nav-global">
+    <a href="#">
+      <img src="../../../../assets/icon/usa.jpg" alt="Icon" class="flag-icon">
+      <span>En</span>
+    </a>
+  </div>
+  <div class="nav-global">
+    <a href="#">
+      <span>Hello, sign in</span><br>
+      <b>Account & Lists</b>
+    </a>
+  </div>
+  <div class="nav-global">
+      <a href="#">
+        <span>Return</span><br>
+        <b>& Order</b>
+      </a>
+  </div>
+  <div class="nav-global">
+      <a href="#">
+        <span>Cart</span>
+      </a>
+  </div>
+</div>

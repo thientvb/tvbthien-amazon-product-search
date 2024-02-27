@@ -1,0 +1,99 @@
+[
+  {
+    "ContainingType": "AmazonProductSearchAPI.Controllers.Product.ProductController",
+    "Method": "GetAmazonAliases",
+    "RelativePath": "api/product/aliases",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[ViewModels.Domain.AmazonAlias, ViewModels, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AmazonProductSearchAPI.Controllers.Search.SearchController",
+    "Method": "SearchAmazonProduct",
+    "RelativePath": "api/search/search",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "Data.Requests.SearchRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Data.Requests.SearchResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AmazonProductSearchAPI.Controllers.Search.SearchController",
+    "Method": "GetSuggestions",
+    "RelativePath": "api/search/suggestion",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Limit",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Alias",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Prefix",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Suffix",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Data.Requests.SuggestionResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AmazonProductSearchAPI.Controllers.Trending.TrendingController",
+    "Method": "GetTrendingData",
+    "RelativePath": "api/trending",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

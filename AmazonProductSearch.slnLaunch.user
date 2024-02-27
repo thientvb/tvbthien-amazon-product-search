@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Name": "AmazonProductSearchAPI\\AmazonProductSearchAPI.csproj",
+        "Action": "StartWithoutDebugging"
+      },
+      {
+        "Name": "AmazonProductSearchWebApp\\AmazonProductSearchWebApp.esproj",
+        "Action": "StartWithoutDebugging"
+      }
+    ]
+  }
+]

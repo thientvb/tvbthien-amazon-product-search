@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "E4dkkaZ8JMDzBafWvhUEogY0uQJVVN6l08Vxu3P64PU=",
+  "Source": "AmazonProductSearchAPI",
+  "BasePath": "_content/AmazonProductSearchAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

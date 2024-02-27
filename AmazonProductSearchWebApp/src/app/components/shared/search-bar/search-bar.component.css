@@ -1,0 +1,172 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #131921;
+  padding: 0 20px;
+  color: white;
+}
+
+.nav-logo img {
+  height: 64px;
+}
+
+#glow-ingress-block:hover {
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #f0f2f5;
+  border-radius: 5px;
+  position: relative;
+}
+
+.select-container {
+  height: 100%;
+}
+
+.select-container select {
+  background-color: #e6e6e6;
+  height: 40px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-input {
+  width: 60vh;
+  height: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.search-text-input {
+  height: 40px;
+  width: 60vh;
+  padding: 8px;
+  box-sizing: border-box; /* Ensure padding and border are included in the total width */
+}
+
+.image-upload-icon {
+  height: 20px;
+  position: absolute;
+  right: 8px;
+  cursor: pointer;
+}
+
+.search-icon {
+  height: 25px;
+  cursor: pointer;
+}
+
+.flag-icon {
+  height: 16px;
+  margin-right: 8px;
+}
+
+.search-button button {
+  height: 40px;
+  padding: 8px 16px;
+  background-color: #febd69;
+  color: #111;
+  border: none;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-global {
+  text-align: left;
+}
+
+.nav-global:hover {
+  border: 1px solid white;
+}
+
+.trending-suggestions {
+  color: black;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.amazon-lens {
+  color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.trending-suggestions div div {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.trending-suggestions div div:hover {
+  background-color: #f0f2f5;
+}
+
+.trending-icon {
+  height: 16px;
+  margin-right: 8px;
+}
+
+.suggestion-trending-text {
+  color: black;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.my-suggestion-keyword {
+  color: #8f218e;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.my-suggestion-alias {
+  color: black;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.my-suggestion-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+}
+
+.my-suggestion-remove-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.btn-close-amazon-lens {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  float: right;
+}
